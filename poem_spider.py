@@ -9,9 +9,6 @@ class Spider(object):
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0'
         }
-        self.conn = None
-        self.cursor = None
-        self.create_table()
 
     def get_html(self, url):
         response = requests.get(url,headers=self.headers)
